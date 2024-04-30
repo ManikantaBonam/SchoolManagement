@@ -1,0 +1,64 @@
+
+
+body {
+      /* font-family: Arial, sans-serif;
+      background-position: center; 
+     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;  */
+    
+    font-family: Arial, sans-serif;
+     background-image:url("https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_640.jpg");
+    background-size: cover;
+   background-position: center;
+       
+ }
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.gender-input label {
+    display: inline-block; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

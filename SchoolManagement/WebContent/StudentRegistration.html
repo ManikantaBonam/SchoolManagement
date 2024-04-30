@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="RegisterServlet" method="post">
+<h1>Registration</h1>
+
+<label for="id" >Enter Student Id</label>
+<input type="text" name="id" placeholder="Enter Id" required="required"><br><br>
+
+ <label for="user" >Enter Student UserName</label>
+<input type="text" name="user" placeholder="Enter User" required="required"><br><br>
+
+<label for="pass" >Enter Student Password</label>
+<input type="text" name="pass" placeholder="Enter Password" required="required"><br>
+
+<!-- <label for="role">Enter Role</label> -->
+<input type="hidden" name="role" placeholder="Enter Role" required="required"><br>
+
+<label for="name">Enter Student Name</label>
+<input type="text" name="name" placeholder="Enter Name" required="required"><br><br>
+
+<label for="sname">Enter SurName</label>
+<input type="text" name="sname" placeholder="Enter SurName" required="required"><br><br>
+
+<label for="fname">Enter Father Name</label>
+<input type="text" name="fname" placeholder="Enter Father Name" required="required"><br><br>
+
+<label>Gender:</label>
+        <div class="gender-input">
+            <input type="radio" id="male" name="gender" value="male"> 
+            <label class="gender-label" for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"> 
+            <label class="gender-label" for="female">Female</label>
+        </div><br>
+
+<label for="class">Enter Class</label>
+<input type="text" name="class" placeholder="Enter Class" required="required"><br><br>
+ 
+<label for="section">Enter Section</label>
+<input type="text" name="section" placeholder="Enter Section" required="required"><br><br>
+ 
+<label for="date">Enter  Date</label>
+<input type="datetime-local" name="date" placeholder="Enter Name" required="required"><br><br> 
+
+<input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>

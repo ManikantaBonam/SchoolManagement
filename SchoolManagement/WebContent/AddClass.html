@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Class</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    form {
+        width: 50%;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="submit"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <form action="AddClassServlet" method="post">
+      <h1>Add New Class</h1>
+        <label for="classid">Enter Class Id</label>
+        <input type="text" name="classid" id="classid" placeholder="Enter ClassId" required>
+        <label for="class">Enter Class</label>
+        <input type="text" name="class" id="class" placeholder="Enter Class" required>
+        <label for="section">Enter Section</label>
+        <input type="text" name="section" id="section" placeholder="Enter Section" required>
+        <input type="submit" value="Add Class">
+        <input type="button" value="Back" onclick="goBack()">
+    </form>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
